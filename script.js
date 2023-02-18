@@ -13,8 +13,8 @@ document.querySelector("h1").onmouseover = event => {
         }) 
         .join("");
 
-        if(iterations >= 9) clearInterval(interval);
-        iterations += 1;
+        if(iterations >= event.target.dataset.value.length) clearInterval(interval);
+        iterations += 1 / 3;
     }, 30)
 }
 
